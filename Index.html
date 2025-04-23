@@ -12,44 +12,26 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
       color: #fff;
-      overflow: hidden;
     }
     .container {
-      margin-top: 100px;
+      padding-top: 100px;
     }
     h1 {
       font-size: 3em;
-      margin-bottom: 0.3em;
     }
     p {
       font-size: 1.5em;
-      margin: 0 auto;
       max-width: 600px;
-      line-height: 1.6;
+      margin: 20px auto;
+      line-height: 1.5;
     }
     .balloons {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      z-index: 0;
-    }
-    .balloon {
-      width: 100px;
-      animation: float 6s ease-in-out infinite;
-      margin: 20px;
-    }
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-40px); }
-      100% { transform: translateY(0); }
+      margin-top: 30px;
     }
     .footer {
-      position: fixed;
-      bottom: 10px;
-      width: 100%;
+      margin-top: 40px;
       font-size: 1em;
+      opacity: 0.8;
     }
   </style>
 </head>
@@ -57,12 +39,15 @@
   <div class="container">
     <h1>Happy Birthday Pragyaa</h1>
     <p>Pragyaa, I love you so so much that even words can't express the love and care I have for you.</p>
+    <div class="balloons">
+      <img src="https://i.ibb.co/FKdxhdJ/balloon.png" width="100" />
+    </div>
+    <div class="footer">Made with love by [Your Name]</div>
   </div>
-  <img src="https://i.ibb.co/FKdxhdJ/balloon.png" class="balloon balloons" alt="balloons" />
-  <div class="footer">Made with love</div>
+
   <audio autoplay loop>
-    <source src="https://bhd-gitanshuworld.vercel.app/audio.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
+    <source src="/birthday.mp3" type="audio/mpeg" />
+    Your browser does not support the audio tag.
   </audio>
 </body>
-</html>
+</html> 
