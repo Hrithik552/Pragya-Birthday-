@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Pragyaa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .container {
+      margin-top: 100px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
+    }
+    p {
+      font-size: 1.5em;
+      margin: 0 auto;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+    .balloons {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      z-index: 0;
+    }
+    .balloon {
+      width: 100px;
+      animation: float 6s ease-in-out infinite;
+      margin: 20px;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-40px); }
+      100% { transform: translateY(0); }
+    }
+    .footer {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday Pragyaa</h1>
+    <p>Pragyaa, I love you so so much that even words can't express the love and care I have for you.</p>
+  </div>
+  <img src="https://i.ibb.co/FKdxhdJ/balloon.png" class="balloon balloons" alt="balloons" />
+  <div class="footer">Made with love</div>
+  <audio autoplay loop>
+    <source src="https://bhd-gitanshuworld.vercel.app/audio.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
